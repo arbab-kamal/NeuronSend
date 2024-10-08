@@ -12,7 +12,7 @@ import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: "Neuro Send",
   icons: {
-    icon: "/icon.ico",
+    icon: "/bot.webp",
   },
 };
 
