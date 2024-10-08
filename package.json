@@ -1,5 +1,5 @@
 {
-  "name": "normalhuman",
+  "name": "NeuroSend",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "db:migrate": "prisma migrate deploy",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
-    "dev": "next dev --turbo --port 3001 | egrep -v '^\\s?(GET|POST|OPTIONS)'",
+    "dev": "next dev ",
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start"
@@ -68,6 +68,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "1.0.0",
+    "core-js-pure": "^3.38.1",
     "date-fns": "^3.6.0",
     "dompurify": "^3.1.6",
     "embla-carousel-react": "^8.2.1",
@@ -98,6 +99,7 @@
     "react-tag-input": "^6.10.3",
     "recharts": "^2.12.7",
     "server-only": "^0.0.1",
+    "sharp": "^0.33.5",
     "sonner": "^1.5.0",
     "stripe": "^16.12.0",
     "superjson": "^2.2.1",

@@ -10,8 +10,10 @@ import { ThemeProvider } from "@/components/theme-provicer";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "Normal Human",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  title: "Neuro Send",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -21,11 +23,14 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
         <body>
-          <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
             <TRPCReactProvider>
-              <Kbar>
-                {children}
-              </Kbar>
+              <Kbar>{children}</Kbar>
             </TRPCReactProvider>
             <Toaster />
           </ThemeProvider>
